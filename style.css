@@ -433,20 +433,15 @@ p{
 /***************************** tablette max 992px******************************************************/
 @media screen and (max-width: 992px) {
 
-    /*************hebergements***********************/ 
+    /*************hebergements***********************/
     .search-filters{
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
         width: 100%;
     }
-    .search-filters-media-querries{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        width: 100%;
-    }
-      }
+    
+      
     .all-articles {
         flex-direction: column;
     }
@@ -470,170 +465,39 @@ p{
     .card.stars {
         margin-top: auto;
     }
+}
 
 
 
 /************************************** mobile: max 768 px**************************************/
 @media screen and (max-width: 767px) {
-    .body {
-        margin-left: 0px;
-    }
-    .search-filters{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-      }
-    .all-articles{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-    }
+   
     
     /*******************section: menu ********/
     
-    nav {
-        display: block;
-    }
-    nav img {
-        display: block;
-        margin: auto;
-        padding-left: 40px;
-    }
-
-    .bloc-menu {
-        display: flex;
-        flex-basis: 100%;
-        text-align: center;
-    }
-    .bloc-menu a {
-        flex-basis: 50%;
-        text-align: center;
-        justify-content: center;
-        border-bottom: 3px solid var(--grey);
-    }
-    .bloc-menu a:hover {
-        border-top-color: transparent;
-        border-bottom-color: var(--blue);  
-    }
 
     /*******************recherche***********************/   
-    .fa-solid.fa-magnifying-glass {
-        display: inline;
-        background-color: var(--blue);
-        margin-left: -5px;
-        font-size: 15px;
-        padding: 0;
-    }
-    .btn-search span {
-        display: none;
-    }
     
   
     /********************filters*********************/
-    .filters {
-        display: flex;
-        flex-direction: column-reverse;
-        align-content: flex-start;
-        align-items: baseline;
-
-    }
-    .filters h3 {
-        margin: 0;
-    }
-    .fa-solid.fa-info {
-        min-width: 25px;
-    }
-
+    
 
     /*****************hebergements**********************/ 
     
-    .all-articles {
-        flex-direction: column-reverse;
-    }
-    .hebergements {
-        padding: 0;
-    }
-    .card {
-        height: 200px;
-        width: 100%;
-        margin: 0;
-    }
-    .card .stars {
-        margin-top: auto;
-    }
-    .card-hebergement {
-        display: flex;
-        flex-direction: row;
-        gap: 20px;
-    }
-    .all-articles > div {
-        background-color:grey;
-    }
-
+  
+    .
 
     /****************populaire***********************/ 
    
-    .populaires {
-        padding-left: 0;
-        background-color: grey;
-    }
-    .popular-list {
-        display: flex;
-        flex-direction: column-reverse;
-        align-items: center;
-        justify-content: center;
-    }
-    .card-popular {
-        height: 150px;
-        width: 100%;
-        margin: 0 0 20px 0;
-    }
-    .card-popular img {
-        height: 150px;
-        width: 100px;
-    }
-    .desc-top {
-        margin-bottom: 100%;
-    }
+  
 
 
     /***********************footer**********************/ 
   
-    .footer {
-        display: block;
-        padding-left: 30px;
-    }
-    .footer-left, .footer-middle {
-        margin-bottom: 25px;
-    }
-}
 
- {
- /*************************activités*****************/
-    .activites {
-        margin: 40px 0px 20px 0;
-    }
-    
-  
-    .activites-list img {
-        height: 150px;
-        width: 100%;
-    }
  
-    .vertical-center {
-        margin: auto 0;
-        align-items: inherit;
-        margin-left: 20px;
-        height: 60px;
-    }
-   
-    .largeur {
-        max-width: 100%;
-    }
+ /*************************activités*****************/
     
-    .param-card-activity {
-        border-radius: 16px;
-        box-shadow: 0px 0px 8px var(--dark-grey);
     } 
     
     } 
