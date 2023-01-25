@@ -5,6 +5,7 @@ padding-left: 2.5%;
 padding-right: 2.5%;
 margin-top: 6px;
 box-sizing: border-box;
+
 }
 a{
     text-decoration: none;
@@ -158,19 +159,14 @@ p{
 }
 
 /**********logo icones des filtres de recherche header et icône de localisation**********/
-.element1,.element2,.element3,.element4,.element6{
-    background-color: #dee8ff;
-    border-radius: 50%;
-    height: 15px; 
-    width: 15px;
-    align-items: center;
-    justify-content: center;
-    margin: 4px;
-    color: #0065fc;
-    margin-right: 12px;
+
+.list-element span,.list-element a{
+    display:inline-block;
+
 }
-
-
+.list-element span{
+    padding-left: 7px;
+}
 
 /**********icone info dans le header**********/
 .element5{
@@ -416,7 +412,7 @@ p{
     
 
 /*******************************media queries***************************************/
-/**********************************destktop first:1400***********************************/
+/**********************************destktop first max 1400px***********************************/
 @media screen and( max-width:1400px) {
     .ul search-filters{
   display: flex;
@@ -428,64 +424,59 @@ p{
     display: flex;
     flex-direction: column;
 }
+   .card-popular{
+    justify-content: space-between;
+   }
 }
 
-/***************************** tablette max 992px******************************************************/
-@media screen and (max-width: 992px) {
-
-    /*************hebergements***********************/
-    .search-filters{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        width: 100%;
-    }
-    
-      
+/**************************tablette max 992px*******************************************/
+ @media screen and (max-width: 992px) {
     .all-articles {
         flex-direction: column;
     }
     .all-articles > div {
-        background-color: grey;
+        background-color:grey;
     }   
 
+    .popular-list, 
     .hebergements {
         display: flex;
-        flex-direction:column;
+        flex-direction: row;
     }
-    .popular-list{
-        display: flex;
-        flex-direction:row;
+    .card-popular {
+        flex-basis: 33%;
     }
-    .card-popular{
-        display: flex;
-    }
+ }   
 
 
-    .card.stars {
-        margin-top: auto;
-    }
-}
-
-
-
-/************************************** mobile: max 768 px**************************************/
-@media screen and (max-width: 767px) {
+/************************************** mobile max 768 px**************************************/
+@media screen and (max-width: 768px) {
+    /*******************section: head ********/
    
-    
-    /*******************section: menu ********/
+    .all-articles{
+        flex-direction: column-reverse;
+        
+    }
+    #research-button-phone{
+        display:inline-block;
+        background-color: #0065fc;
+        color: #dee8ff;
+        font-weight: bold;
+        border-top-right-radius: 8px;
+        border-bottom-right-radius:8px ;
+        border:none ;
+        width: 14%;}
+
+    #button-research{
+        display:none;
+        }    
     
 
-    /*******************recherche***********************/   
     
-  
-    /********************filters*********************/
-    
-
     /*****************hebergements**********************/ 
     
   
-    .
+    
 
     /****************populaire***********************/ 
    
@@ -498,7 +489,7 @@ p{
  
  /*************************activités*****************/
     
-    } 
     
-    } 
+    
+     
 }
