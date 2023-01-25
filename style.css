@@ -166,6 +166,7 @@ p{
 }
 .list-element span{
     padding-left: 7px;
+    color:#0065fc;
 }
 
 /**********icone info dans le header**********/
@@ -269,6 +270,7 @@ p{
 .card p, .card h4 {
     margin: 5px
 }
+
 .card:hover {
     transform: scale(1.02);
     box-shadow: 0 0 8px var blue;
@@ -351,31 +353,26 @@ p{
     color: #000000; 
 }
 /***********************activites*****************************************/
-
-
-.act{
+.container-act{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    flex-wrap: wrap;
-    
-}
-.list{
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: no wrap;}
+.activités-list{
     display: flex;
     background-color:white;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     gap: 2px;
-    
-    
-}
+        
+        
+    }
  .card-activités {
-    height: 500px;
     margin-top: auto;
     display: flex;
     width:20%;
-    border-radius: 30px 30px 30px 30px;
+    border-radius: 0px 20px 20px 0px;
     box-shadow: 0 0 8px var(--dark-grey);
     transition: all 0.2s;
 }
@@ -384,8 +381,10 @@ p{
     background-color:grey ;
     width:100%;
     height: 400px;
-    object-fit: cover;
+   
 }
+
+
 .card-activités:hover{
     transform: scale(1.02);
     box-shadow: 0px 0px 40px rgb(83, 80, 255);
@@ -402,11 +401,13 @@ p{
     display:flex;
     flex-direction: row;
     justify-content: center;
+    flex-wrap: nowrap;
 }
 .card-footer{
     width: 30%;
     justify-content: center;
-    margin-top :1em; 
+    margin-top :1em;
+    flex-wrap: nowrap; 
 }
 
     
@@ -427,6 +428,7 @@ p{
    .card-popular{
     justify-content: space-between;
    }
+
 }
 
 /**************************tablette max 992px*******************************************/
@@ -453,41 +455,131 @@ p{
 @media screen and (max-width: 768px) {
     /*******************section: head ********/
    
-    .all-articles{
-        flex-direction: column-reverse;
-        
-    }
+    
     #research-button-phone{
-        display:inline-block;
-        background-color: #0065fc;
-        color: #dee8ff;
-        font-weight: bold;
-        border-top-right-radius: 8px;
-        border-bottom-right-radius:8px ;
-        border:none ;
-        width: 14%;}
+            display:inline-block;
+            background-color: #0065fc;
+            color: #dee8ff;
+            font-weight: bold;
+            border-top-right-radius: 8px;
+            border-bottom-right-radius:8px ;
+            border:none ;
+            width: 14%;}
 
     #button-research{
-        display:none;
+            display:none;
         }    
+/******************hebergements***********************************/    
+    .all-articles{
+            flex-direction: column-reverse;
+            gap: 60px;
+            
+        }
+    .card-hebergement {
+            display: flex;
+            width: 100%;
+            flex-wrap: wrap;
+            flex-direction: column;
+            gap: 10px;
+            justify-content: space-around;
+         } 
+    .card-hebergement div {
+            flex-basis: calc(33% - 40px);
+            min-width: 220px;
+        }
+    .hebergements {
+            display: flex;
+            flex-direction: column;
+            gap: 0;
+            padding: 0 10px 0 10px; }
+
+    .card-popular {
+                display: flex;
+                background-color:white;
+                padding: 5px;
+                border-radius: 15px;
+                min-height: 140px;
+                margin: 0 20px 20px 20px;
+                min-width: 200px;
+                box-shadow: 0 0 8px var(--dark-grey);
+                transition: all 0.2s; }
+    .popular-list {
+                display: flex;
+                 flex-direction: column;
+                } 
+/************************activites***********************************/  
+    }
+    .container-act{
+        display:flex;
+        background-color:white;
+        flex-direction:column;
+        justify-content: space-between;
+        gap: 8px;
+    }
+   
+    .activités-list{
+            display:inline;
+            justify-content: space-between;
+        }
+    .card-activités {
+            height: 400px;
+            margin-top: auto;
+            display: flex;
+            flex-direction:row;
+            width:100%;
+            padding-left: 2%;
+            border-radius: 0px 30px 30px 0px;
+            box-shadow: 0 0 8px var(--dark-grey);
+            transition: all 0.2s;
+        }
+    .card-activités img{
+        max-height: 350px;
+
+    }
+   
+/***************************footer***************************************/
+    .card-footer{
+        display:flex;
+        flex-direction:column;
+
+    }
+    .footer{
+        display:flex;
+        flex-direction: column;
+        padding-inline-start: 15%;
+        height: 800px;
+    }
+   
+
+
+       
     
 
-    
-    /*****************hebergements**********************/ 
+
+
+
+
+
+
+
+
+
+            }               
+   
     
   
     
 
-    /****************populaire***********************/ 
+
    
   
 
 
-    /***********************footer**********************/ 
+    
   
 
  
- /*************************activités*****************/
+ 
     
     
     
