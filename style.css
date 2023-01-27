@@ -456,8 +456,36 @@ p{
 /************************************** mobile max 768 px**************************************/
 @media screen and (max-width: 768px) {
     /*******************section: head ********/
-   
+    .logo{
+        display: flex;
+        flex-direction: row;
+        padding-left:250px;
+        margin-top: 20px;
+        max-height: 80px;
+        width: 100%;
+    }
+    .nav{
+        flex-wrap: wrap;
+    }
+    .container-nav{
+        height: 250px;
+        width: 100%;
+        display: flex;
+        justify-content: flex space-around;
+        
+        }
     
+    #container-nav{
+        display: flex;
+        width: 100%;
+    }
+    .link-1,.link-2{
+        margin-top: 120px;
+    }
+    .link-1{
+      flex-direction:; 
+
+    }
     #research-button-phone{
             display:inline-block;
             background-color: #0065fc;
