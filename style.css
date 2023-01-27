@@ -365,9 +365,11 @@ p{
     justify-content: space-between;
     align-items: center;
     gap: 2px;
+}
+
         
         
-    }
+    
  .card-activités {
     margin-top: auto;
     display: flex;
@@ -411,7 +413,7 @@ p{
 }
 
     
-
+/**************************************************************************/
 /*******************************media queries***************************************/
 /**********************************destktop first max 1400px***********************************/
 @media screen and( max-width:1400px) {
@@ -473,8 +475,16 @@ p{
     .all-articles{
             flex-direction: column-reverse;
             gap: 60px;
-            
+              
         }
+    .all-articles .hebergements{
+        background-color: white;
+       
+    }
+    
+  .hebergements div{
+    background-color: white;
+  }
     .card-hebergement {
             display: flex;
             width: 100%;
@@ -482,23 +492,30 @@ p{
             flex-direction: column;
             gap: 10px;
             justify-content: space-around;
+            min-height: 220px;
+            background-color:white;
          } 
     .card-hebergement div {
             flex-basis: calc(33% - 40px);
             min-width: 220px;
+            min-height: 250px;
+
         }
     .hebergements {
             display: flex;
             flex-direction: column;
             gap: 0;
-            padding: 0 10px 0 10px; }
+            padding: 0 10px 0 10px; 
+            background-color:white;
+            
+        }
 
     .card-popular {
                 display: flex;
                 background-color:white;
                 padding: 5px;
                 border-radius: 15px;
-                min-height: 140px;
+                min-height: 180px;
                 margin: 0 20px 20px 20px;
                 min-width: 200px;
                 box-shadow: 0 0 8px var(--dark-grey);
