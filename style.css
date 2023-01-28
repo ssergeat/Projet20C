@@ -464,27 +464,44 @@ p{
         max-height: 80px;
         width: 100%;
     }
-    .nav{
-        flex-wrap: wrap;
-    }
-    .container-nav{
-        height: 250px;
-        width: 100%;
-        display: flex;
-        justify-content: flex space-around;
-        
-        }
     
     #container-nav{
         display: flex;
         width: 100%;
+        justify-content: space-around;
     }
-    .link-1,.link-2{
-        margin-top: 120px;
-    }
-    .link-1{
-      flex-direction:; 
 
+    .container-nav1{
+        display: flex;
+        width: 50%;
+       
+    }
+    
+    .container-nav2{
+        display: flex;
+        width: 50%;
+    
+    }
+    
+   
+    
+  
+    .link-1,.link-2{
+        margin-top: 250px;
+    }
+   
+    #main-top h2{
+    margin-top: 300px;
+}
+  
+    .research{
+    width: 600px;
+}
+    #research-input{
+    width: 400px;
+}
+    #icone6{
+        width: 16%;
     }
     #research-button-phone{
             display:inline-block;
@@ -493,12 +510,22 @@ p{
             font-weight: bold;
             border-top-right-radius: 8px;
             border-bottom-right-radius:8px ;
-            border:none ;
-            width: 14%;}
-
+            width: 16%;
+    
+    }
     #button-research{
             display:none;
-        }    
+        }  
+    .search-filters{
+        display: flex;
+        max-width: 500px;
+        flex-wrap: wrap;
+    } 
+    .list-element{
+        box-sizing: border-box;
+       }
+      
+    
 /******************hebergements***********************************/    
     .all-articles{
             flex-direction: column-reverse;
@@ -527,6 +554,7 @@ p{
             flex-basis: calc(33% - 40px);
             min-width: 220px;
             min-height: 250px;
+            
 
         }
     .hebergements {
