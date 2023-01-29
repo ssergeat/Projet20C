@@ -152,7 +152,7 @@ p{
 /************touche de localisation dans le header*************/
 #icon6{
     color:#0065fc;
-    width: 80px;
+    width: 100px;
     display:flex;
     align-items: center;
     justify-content: center;
@@ -274,7 +274,7 @@ p{
     margin: 5px
 }
 h4{
-   padding-left: 12px; 
+   padding-left: 12px;
 }
 
 .card:hover {
@@ -379,16 +379,18 @@ h4{
  .card-activités {
     margin-top: auto;
     display: flex;
-    width:20%;
-    border-radius: 20px 20px 20px 20px;
-    box-shadow: 0 0 8px var(--dark-grey);
+    width:50%;
+    border-radius:  10px solid var(--blue);
+    box-shadow: 0px 4px 4px var(--dark-grey);
     transition: all 0.2s;
+    
 }
 .card-activités img{
     border-radius: 30px 30px 0px 0px;
     background-color:grey ;
-    width:100%;
     height: 400px;
+    width:450px;
+    object-fit:cover;
    
 }
 
@@ -518,7 +520,7 @@ h4{
    
    
     #main-top h2{
-    margin-top: 300px;
+    margin-top: 200px;
 }
   
     .research{
@@ -531,15 +533,16 @@ h4{
         width: 16%;
     }
     #research-button-phone{
-            display:inline-block;
+            display:flex;
             background-color: #0065fc;
             color: #dee8ff;
             font-weight: bold;
             border-top-right-radius: 8px;
             border-bottom-right-radius:8px ;
             width: 16%;
-    
+            
     }
+
     #button-research{
             display:none;
         }  
