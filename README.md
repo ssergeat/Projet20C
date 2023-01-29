@@ -3,6 +3,8 @@
 [Note+de+synthèse+pour+intégration+du+site+Booki+(IW).pdf](https://github.com/ssergeat/Projet20C/files/10530877/Note%2Bde%2Bsynthese%2Bpour%2Bintegration%2Bdu%2Bsite%2BBooki%2B.IW.pdf)
 # Projet20C
 OBJECTIF PRINCIPAL DU PROJET: integrer des contenus conformément à des maquettes avec les langages HTML et CSS, et interface responsive.
+
+
 Contexte:
 Vous débutez votre alternance en tant que développeur web au sein de la start-up Booki. L’entreprise souhaite développer un site Internet qui permette aux usagers de trouver des hébergements et des activités dans la ville de leur choix.
 Vous êtes chargé d'intégrer l'interface du site avec du code HTML et CSS. Pour cela, vous travaillez en étroite collaboration avec Sarah, la CTO, et Loïc, l’UI designer. 
