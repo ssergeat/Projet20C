@@ -453,33 +453,50 @@ p{
     /*******************section: head ********/
     .logo{
         display: flex;
-        flex-direction: row;
-        padding-left:200px;
+        flex-direction: column;
         margin-top: 20px;
         max-height: 80px;
         width: 40%;
+        justify-content: center;
+    }
+    img.logo{
+        flex-direction: center;
+        margin-left: 200px;
     }
     
     #container-nav{
         display: flex;
         width: 100%;
         justify-content: space-between;
+
     }
     nav{
         display: flex;
         flex-direction: column;
     }
-    .container-nav1:hover{
-        border-bottom: #0065fc 3px solid;
+    .container-nav1{
+        border-bottom: #0065fc 5px solid;
+        padding: 25px;
     }
-    .container-nav2:hover{
-        border-bottom: #0065fc 3px solid;
+    .container-nav2{
+        border-bottom: #0065fc 5px solid;
+        padding: 25px;
     }
     .container-nav1:hover,.container-nav2:hover{
         border-top: none;
     }
+   
+    a.link-1,.link-2{
+        text-decoration: underline;
+        color: #0065fc;
+        font-size: 25px;
 
-    
+    }
+    #research-input{
+        font-size:20px ;
+        font-weight: bold;
+        color: black;
+    }
    
     
   
@@ -654,4 +671,4 @@ p{
     
     
      
-}
+
