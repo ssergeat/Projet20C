@@ -108,15 +108,21 @@ h1{
 }
 
 p{
-    font-size: 18px;
+    font-size: 22px;
 }
 
 /*************touche pour ecrire la ville de recherche****************************/
 #research-input{
     border: none;
     height:53 px;
-    width: 160px;
+    width: 200px;
+} 
+#research-input{
+    font-size:20px ;
+    font-weight: bold;
+    color: black;
 }
+
 #research{
     display:flex;
     height: 45px;
@@ -127,6 +133,7 @@ p{
 #button-research{
     background-color: #0065fc;
     color: #dee8ff;
+    font-size: 20px;
     font-weight: bold;
     border-top-right-radius: 8px;
     border-bottom-right-radius:8px ;
@@ -248,7 +255,7 @@ p{
 
 .card {
     background-color:white;
-    border-radius: 16px;
+    border-radius: 16px 16px 16px 16px;
     padding: 5px;
     box-shadow: 0 0 8px var gray;
     flex-grow: 1;
@@ -264,6 +271,9 @@ p{
 }
 .card p, .card h4 {
     margin: 5px
+}
+h4{
+   padding-left: 12px; 
 }
 
 .card:hover {
@@ -342,7 +352,7 @@ p{
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
-    font-size: 32px;
+    font-size: 36px;
     line-height: 26px;
     
     color: #000000; 
@@ -369,7 +379,7 @@ p{
     margin-top: auto;
     display: flex;
     width:20%;
-    border-radius: 0px 20px 20px 0px;
+    border-radius: 20px 20px 20px 20px;
     box-shadow: 0 0 8px var(--dark-grey);
     transition: all 0.2s;
 }
@@ -436,7 +446,11 @@ p{
     .all-articles > div {
         background-color:grey;
     }   
+.list-item{
+    width: 100%;
+    display: flex;
 
+}
     .popular-list, 
     .hebergements {
         display: flex;
@@ -530,13 +544,17 @@ p{
         }  
     .search-filters{
         display: flex;
-        max-width: 500px;
+        max-width: 990px;
         flex-wrap: wrap;
     } 
     .list-element{
-        box-sizing: border-box;
+        width: 250px;
        }
-    
+    .list-item{
+        display: flex;
+        width:100%;
+        flex-wrap: wrap;
+    }
     
 /******************hebergements***********************************/    
     .all-articles{
