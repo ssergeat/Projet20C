@@ -19,3 +19,4 @@ un dossier “CSS” comprenant un fichier “style.css” contenant l’ensembl
 un dossier “images” contenant l’ensemble des images utilisées.
 Bon courage pour ce projet, et bonne journée ! ".
 L'objectif global est d'intégrer du contenu conformément à une maquette avec HTML et CSS avec l'interface responsive.
+En fichiers joints, les maquettes "modèles" sur Figma; la note de synthèse (fourni par Sarah de Booki:consignes UX design) et un guide de conseil pour la réalisation (consignes pédagogiques fournies par Openclassroom).
