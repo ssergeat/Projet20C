@@ -111,7 +111,7 @@ nav{
 }
 
 h1{
-    font: size 19px;
+    font-size: 19px;
 }
 
 p{
@@ -121,7 +121,6 @@ p{
 /*************touche pour ecrire la ville de recherche****************************/
 #research-input{
     border: none;
-    height:53 px;
     width: 200px;
 } 
 #research-input{
@@ -199,8 +198,7 @@ p{
 
 /*****************titre hebergements à Marseille************************************/
 .h3{
-    size: 22px;
-    line-height: 25px 83px;
+    font-size: 22px;
 }
 .fa-chart-line{
     color:#0065fc;
@@ -266,7 +264,7 @@ p{
     background-color:white;
     border-radius: 16px 16px 16px 16px;
     padding: 5px;
-    box-shadow: 0 0 8px var gray;
+    box-shadow: 0 0 8px gray;
     flex-grow: 1;
     margin: 0 10px 10px 10px;
     transition: all 0.2s;
@@ -277,7 +275,6 @@ p{
     height: 120px;
     width: 100%;
     object-fit: cover;
-    padding-left:110 px ;
 }
 .card p, .card h4 {
     margin: 5px
@@ -289,7 +286,7 @@ h4{
 
 .card:hover {
     transform: scale(1.02);
-    box-shadow: 0 0 8px var blue;
+    box-shadow: 0 0 8px  blue;
     cursor: pointer;
 }
 .card.stars {
@@ -373,7 +370,6 @@ h4{
     display: flex;
     flex-direction:row;
     align-items: center;
-    flex-wrap: no wrap;
     justify-content: space-between;
 }
 .activités-list{
@@ -401,7 +397,6 @@ h4{
     height: 200px;
     width: 300px;
     object-fit:cover;
-    padding-left:20 px;
   
 }
 
@@ -523,7 +518,7 @@ h4{
         justify-content: center;
     }
     img.logo{
-        flex-direction: center;
+        justify-content: center;
         margin-left: 200px;
     }
     
