@@ -199,10 +199,7 @@ p
 	padding: 10px;
 }
 
-#research-button-phone
-{
-	display: none;
-}
+
 
 #button-research:hover
 {
@@ -263,7 +260,15 @@ p
 	cursor:pointer;
 	display: flex;
 }
-
+.fa-search{
+	visibility: hidden;
+	color: #0065fc;
+}
+.fa-map-marker-alt{
+	color:black;
+	margin-left: 22px;
+	margin-top:15px;
+}
 /*****************titre hebergements à Marseille************************************/
 .h3
 {
@@ -490,7 +495,7 @@ h4
 .card-activites
 {
 	margin-top: auto;
-	width:20%;
+	width:22%;
 	border-radius: 10%;
 	box-shadow: 4px 4px 4px white;
 	transition: all 0.2s;
@@ -503,13 +508,14 @@ h4
 	width: 100%;
 	border-radius: 10%;
 }
+.card-activites h4{
+	font-size:16px;
+}
 
 .card-activites-title
 {
 	padding: 0 20px;
-}
-.card-activite-title h4{
-    font-size: 16px;
+	font-size: 14px;
 }
 
 .card-activites img
@@ -676,11 +682,14 @@ h4
 		height: 100px;
 		border-radius: 10%;
 	}
-
+	.card-popular h4,.card-hebergement h4,.card-activites h4{
+		font-size: 20px;
+	}
 	.card-activites-title,.card-activites h4
 	{
 		display: flex;
-		padding-top: 90px;
+		padding-top: 92px;
+		padding-left: 15px;
 	}
 
 	.card-activites:hover
@@ -694,7 +703,10 @@ h4
 	{
 		margin-top: 60px;
 	}
-
+	.card-h4{
+		font-size: 16px;
+		color: aqua;
+	}
 }
 
 /************************************** mobile max 768 px**************************************/
@@ -879,8 +891,13 @@ h4
 	{
 		flex-direction: column-reverse;
 		gap: 60px;
+		background-color: lightgray;
 	}
+	.all-articles > div{
+		border-radius: 0%;
+		background-color: lightgrey;
 
+	}
 	.all-articles h3
 	{
 		font-size: 22px;
@@ -934,18 +951,19 @@ h4
 	{
 		height: 200px;
 	}
-
+	.populaires h3{
+		background-color: lightgrey;
+	}
 	.card-popular
 	{
 		display: flex;
 		width: 640px;
 		background-color:white;
 		padding: 5px;
-		border-radius: 15px;
+		padding-bottom: 15px;
 		min-height: 180px;
 		margin: 20px 20px 20px 20px;
 		min-width: 160px;
-		box-shadow: 0 0 4px var(--dark-grey);
 		transition: all 0.2s;
 	}
 
@@ -953,13 +971,12 @@ h4
 	{
 		display: flex;
 		flex-direction: column;
+		background-color: lightgray;
 	}
 
 	/************************activites***********************************/
-	.all-articles h3
-	{
-	display:none}
-
+	
+	
 	.container-act
 	{
 		display:flex;
@@ -1001,9 +1018,9 @@ h4
 	{
 		display: flex;
 		margin-top: 40px;
-		height: 28px;
+		height: 22px;
 		width: 320px;
-		font-size: 22px;
+		font-size: 20px;
 	}
 
 	/***************************footer***************************************/
