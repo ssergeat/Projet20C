@@ -622,19 +622,18 @@ h4
 	.card-popular img
 	{
 		height: 200px;
-		width:100%;
+		width:70%;
 	}
 
 	.card-popular
 	{
 		border:4px solid white;
-		width: 220px;
-		margin-left: 38px;
+		width: 340px;
+		margin-left: 8px;
 	}
 
-	.card-description
-	{
-		width: 140px;
+	.card-description{
+		width: 240px; 
 	}
 
 	.stars-margin-top
@@ -735,7 +734,20 @@ h4
 		padding-top: 10px;
 		padding-bottom: 10px;
 	}
+	.fa-map-marker-alt{
+		font-size: 32px;
+		
+	}
 
+	.fa-search{
+		visibility:visible;
+		color: white;
+		font-size: 32px;
+		display: flex;
+		margin-left: 34px;
+		padding-top: 10px;
+		
+	}
 	.element5
 	{
 		font-size: 12px;
@@ -945,6 +957,7 @@ h4
 		gap: 0;
 		padding: 0 10px 0 10px;
 		background-color:white;
+		padding-top: 30px;
 	}
 
 	.card-img
@@ -953,6 +966,11 @@ h4
 	}
 	.populaires h3{
 		background-color: lightgrey;
+		font-size: 26px;
+	}
+	.hebergements h3{
+		font-size:26px ;
+
 	}
 	.card-popular
 	{
@@ -973,7 +991,9 @@ h4
 		flex-direction: column;
 		background-color: lightgray;
 	}
-
+	#acacher{
+		visibility: hidden;
+	}
 	/************************activites***********************************/
 	
 	
@@ -1020,9 +1040,13 @@ h4
 		margin-top: 40px;
 		height: 22px;
 		width: 320px;
-		font-size: 20px;
+		font-size: 24px;
 	}
-
+	#act{
+		font-size: 26px;
+		padding-left: 25px;
+		padding-top: 40px;
+	}
 	/***************************footer***************************************/
 	.card-footer
 	{
