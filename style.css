@@ -54,10 +54,6 @@ li:hover
 {
 	display:inline-block;
 	font-weight: bold;
-}
-
-.element-filtre
-{
 	border:0px solid cornsilk;
 	border-radius:0px;
 }
@@ -168,10 +164,6 @@ p
 {
 	border: none;
 	width: 200px;
-}
-
-#research-input
-{
 	font-size:20px ;
 	font-weight: bold;
 	color: black;
@@ -1058,10 +1050,6 @@ h4
 	.card-footer h4
 	{
 		font-size: 24px;
-	}
-
-	.card-footer h4
-	{
 		padding-left: 20px;
 	}
 
