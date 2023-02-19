@@ -911,7 +911,7 @@ h4 {
 	}
 
 	.card-activites {
-		height: 260px;
+		height: 100%;
 		margin-top: 40px;
 		display: inline-block;
 		flex-direction: row;
