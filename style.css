@@ -18,14 +18,15 @@ ul {
 
 li {
 	display: inline-block;
-	margin: 0 10px;
+	margin: 10px;
 	font-size: 20px;
 	align-items: center;
 	border: 2px solid #d9d9d9;
-	border-radius: 50px;
+	border-radius: 40px;
 	cursor: pointer;
 	padding-right: 18px;
 	font-weight: bold;
+	
 }
 
 li:hover {
@@ -198,7 +199,7 @@ p {
 
 .list-element1,
 .list-element2 span {
-	padding: 0 5px 0 8px;
+	padding: 0 2px 0 2px;
 	color: #0065fc;
 }
 
@@ -551,8 +552,9 @@ h4 {
 
 	.card-popular {
 		border: 4px solid white;
-		width: 340px;
-		margin-left: 8px;
+		width: 360px;
+		margin-left: 16px;
+		margin-right: 20px;
 	}
 
 	.card-description {
