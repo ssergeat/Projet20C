@@ -340,6 +340,9 @@ h4 {
 	margin-top: auto;
 	color: #0065fc;
 }
+#acacher{
+	font-size: 18px;
+}
 
 /*populaires*/
 .populaires {
@@ -412,6 +415,9 @@ h4 {
 }
 
 /*activites*/
+#act{
+	font-size: 22px;
+}
 .container-act {
 	display: flex;
 	flex-direction: row;
@@ -443,9 +449,7 @@ h4 {
 	border-radius: 10%;
 }
 
-.card-activites h4 {
-	font-size: 16px;
-}
+
 
 .card-activites-title {
 	padding: 0 20px;
@@ -599,7 +603,7 @@ h4 {
 	.card-popular h4,
 	.card-hebergement h4,
 	.card-activites h4 {
-		font-size: 20px;
+		font-size: 16px;
 	}
 
 	.card-activites-title,
