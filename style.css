@@ -190,6 +190,11 @@ p {
 	padding: 0 5px;
 }
 
+.container-filtre{
+	color: aqua;
+
+}
+
 .list-element1,
 .list-element2 span,
 .list-element1,
@@ -209,7 +214,7 @@ p {
 	border-radius: 100px;
 	border: solid 1px lightgray;
 	margin-right: 8px;
-	padding: 7px 11px 7px 11px;
+	padding: 7px 11px 7px 15px;
 	font-size: 18px;
 }
 
