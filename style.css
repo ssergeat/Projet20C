@@ -26,7 +26,7 @@ li {
 	cursor: pointer;
 	padding-right: 18px;
 	font-weight: bold;
-	
+
 }
 
 li:hover {
@@ -185,7 +185,7 @@ p {
 
 /*logo icones des filtres de recherche header et icône de localisation*/
 
-#filtre{
+#filtre {
 	font-weight: bolder;
 	font-size: 18px;
 }
@@ -349,7 +349,8 @@ h4 {
 	margin-top: auto;
 	color: #0065fc;
 }
-#acacher{
+
+#acacher {
 	font-size: 18px;
 }
 
@@ -424,9 +425,10 @@ h4 {
 }
 
 /*activites*/
-#act{
+#act {
 	font-size: 22px;
 }
+
 .container-act {
 	display: flex;
 	flex-direction: row;
@@ -511,6 +513,7 @@ h4 {
 	border-width: 0px 0px 0px 0px;
 	font-size: 16px;
 
+
 }
 
 /**media queries**/
@@ -544,8 +547,12 @@ h4 {
 	}
 
 	.list-item {
-		width: 100%;
 		display: flex;
+	}
+
+	#filtre {
+		margin-top: 26px;
+		margin-right: 25px;
 	}
 
 	.popular-list,
@@ -596,19 +603,16 @@ h4 {
 
 	.card-activites {
 		margin-top: auto;
-		width: 22%;
-		height: 510px;
-		border-radius: 10%;
+		width: 20%;
+		height: 327px;
 		box-shadow: 5px 5px 5px white;
 		transition: all 0.2s;
 		border: 3px solid var(--blue);
 	}
 
-	.card-activites-img {
-		display: block;
-		width: 100%;
-		border-radius: 10%;
-		height: 267px;
+	.card-activites img {
+		height: 260px;
+		border-radius: 20px 20px 0px 0px;
 	}
 
 	.card-popular h4,
@@ -620,13 +624,12 @@ h4 {
 	.card-activites-title,
 	.card-activites h4 {
 		display: flex;
-		padding-top: 92px;
 		padding-left: 15px;
 	}
 
 	.card-activites:hover {
 		transform: scale(1.02);
-		box-shadow: 0px 0px 40px rgb(83, 80, 255);
+		box-shadow: 0px 0px 40px lightgray;
 		cursor: pointer;
 	}
 
@@ -635,6 +638,7 @@ h4 {
 	.footer3 {
 		width: 280px;
 	}
+
 
 }
 
@@ -718,10 +722,12 @@ h4 {
 		font-weight: bold;
 		color: black;
 	}
-	.h2{
+
+	.h2 {
 		font-size: 22px;
 	}
-	.h4{
+
+	.h4 {
 		font-size: 16px;
 	}
 
@@ -754,9 +760,11 @@ h4 {
 	#button-research {
 		display: none;
 	}
-	#filtre{
-	width:100%;
-	margin-left: 2%;
+
+	#filtre {
+		width: 100%;
+		margin-left: 2%;
+		margin-bottom: 40px;
 	}
 
 	.search-filters {
@@ -769,25 +777,25 @@ h4 {
 		font-size: 24px;
 		width: 2px;
 	}
-	
+
 
 	.list-element1,
 	.list-element2 {
 		display: flex;
-		width: 230px;
+		width: 260px;
 		flex-direction: row;
 		flex-wrap: nowrap;
 		height: 30px;
 		padding-top: 10px;
 		padding-bottom: 10px;
+		
 	}
 
 	.list-item {
 		display: flex;
-		width: 700px;
+		width: 760px;
 		flex-direction: row;
 		flex-wrap: wrap;
-		padding-top: 60px;
 		margin-left: 0px;
 	}
 
@@ -798,7 +806,7 @@ h4 {
 		padding-left: 12px;
 		font-weight: bolder;
 	}
-	
+
 	.list-item li {
 		display: flex;
 		justify-content: space-between;
@@ -938,9 +946,7 @@ h4 {
 	.card-activites img {
 		border-top-left-radius: 5%;
 		border-top-right-radius: 5%;
-		width: 710px;
 		object-fit: cover;
-		margin-right: 450px;
 	}
 
 	.card-activites h4 {
@@ -971,14 +977,15 @@ h4 {
 		padding-top: 0px;
 	}
 
-	li h4{
+	li h4 {
 		font-size: 18px;
 	}
-	li{
+
+	li {
 		font-size: 16px;
 		font-weight: normal;
 	}
-	
+
 
 
 }
