@@ -199,7 +199,7 @@ p {
 
 .list-element1,
 .list-element2 span {
-	padding: 0 2px 0 2px;
+	padding: 0 0px 0px 14px;
 	color: #0065fc;
 }
 
