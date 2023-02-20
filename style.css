@@ -184,16 +184,19 @@ p {
 }
 
 /*logo icones des filtres de recherche header et icône de localisation*/
+
+#filtre{
+	font-weight: bolder;
+	font-size: 18px;
+}
+
 .list-element1,
 .list-element2 {
 	font-size: 17px;
 	padding: 0 5px;
 }
 
-.container-filtre{
-	color: aqua;
 
-}
 
 .list-element1,
 .list-element2 span,
@@ -507,6 +510,7 @@ h4 {
 	font-weight: 100;
 	border-width: 0px 0px 0px 0px;
 	font-size: 16px;
+
 }
 
 /**media queries**/
@@ -750,6 +754,10 @@ h4 {
 	#button-research {
 		display: none;
 	}
+	#filtre{
+	width:100%;
+	margin-left: 2%;
+	}
 
 	.search-filters {
 		display: flex;
@@ -761,6 +769,7 @@ h4 {
 		font-size: 24px;
 		width: 2px;
 	}
+	
 
 	.list-element1,
 	.list-element2 {
@@ -769,8 +778,6 @@ h4 {
 		flex-direction: row;
 		flex-wrap: nowrap;
 		height: 30px;
-		margin-left: 5px;
-		margin-top: 5px;
 		padding-top: 10px;
 		padding-bottom: 10px;
 	}
@@ -789,8 +796,9 @@ h4 {
 		margin-top: 10px;
 		margin-bottom: 10px;
 		padding-left: 12px;
+		font-weight: bolder;
 	}
-
+	
 	.list-item li {
 		display: flex;
 		justify-content: space-between;
@@ -962,6 +970,7 @@ h4 {
 		border-style: none;
 		padding-top: 0px;
 	}
+
 	li h4{
 		font-size: 18px;
 	}
