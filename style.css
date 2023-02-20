@@ -495,7 +495,7 @@ h4 {
 .footer1,
 .footer2,
 .footer3 {
-	width: 22%;
+	width: 20%;
 	font-weight: normal;
 
 }
@@ -534,6 +534,7 @@ h4 {
 	.card-popular {
 		justify-content: space-between;
 	}
+
 }
 
 /**tablette max 992px**/
