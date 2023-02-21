@@ -1,5 +1,3 @@
-
-
 body {
 	font-family: Raleways, sans-serif;
 	padding-left: 2.5%;
@@ -132,7 +130,7 @@ h1 {
 }
 
 #main-top p {
-	
+
 	margin-bottom: 40px;
 }
 
@@ -189,7 +187,7 @@ p {
 
 /*logo icones des filtres de recherche header et icône de localisation*/
 
-#filtre{
+#filtre {
 	font-weight: bolder;
 	font-size: 18px;
 	padding-right: 20px;
@@ -294,18 +292,18 @@ p {
 	display: flex;
 	flex-wrap: wrap;
 	align-items: flex-start;
-	gap: 0;
 	padding: 0 10px 0 10px;
-	
 }
 
 .hebergements h3 {
 	width: 100%;
 }
-.all-articles h3{
-	padding-top:25px ;
+
+.all-articles h3 {
+	padding-top: 25px;
 	padding-bottom: 25px;
 }
+
 .hebergements a {
 	text-decoration: none;
 	color: inherit;
@@ -316,14 +314,14 @@ p {
 	flex-wrap: wrap;
 	gap: 10px;
 	justify-content: space-around;
-	margin-left:4px;
-	margin-right:4px; 
+	margin-left: 4px;
+	margin-right: 4px;
 }
 
 .card-hebergement div {
 	flex-basis: calc(33% - 40px);
-	min-width: 220px;
-	
+	min-width: 200px;
+
 }
 
 .card {
@@ -334,8 +332,8 @@ p {
 	flex-grow: 1;
 	margin: 0 10px 10px 10px;
 	transition: all 0.2s;
-	width:220px;
-	
+	width: 200px;
+
 }
 
 .card img {
@@ -397,7 +395,7 @@ h4 {
 	width: 330px;
 	box-shadow: 0 0 8px var(--dark-grey);
 	transition: all 0.2s;
-	
+
 }
 
 .card-popular:hover {
@@ -443,7 +441,7 @@ h4 {
 /*activites*/
 #act {
 	font-size: 22px;
-	padding-top:45px;
+	padding-top: 45px;
 }
 
 
@@ -509,10 +507,12 @@ h4 {
 	flex-direction: row;
 	justify-content: center;
 	flex-wrap: nowrap;
-	padding-left:40px;
+	padding-left: 40px;
 }
 
-.footer1,.footer2,.footer3{
+.footer1,
+.footer2,
+.footer3 {
 	width: 30%;
 	font-weight: normal;
 }
@@ -529,9 +529,10 @@ h4 {
 	padding-top: 3px;
 	font-weight: 100;
 	font-size: 16px;
-	border:0;
+	border: 0;
 }
-.footer li:hover{
+
+.footer li:hover {
 	background-color: #f2f2f2;
 }
 }
@@ -564,7 +565,8 @@ h4 {
 @media screen and (max-width: 992px) {
 	.all-articles {
 		flex-direction: column;
-		gap:40px;
+		gap: 40px;
+		margin-left: 12px;
 	}
 
 	#container-nav a {
@@ -588,18 +590,17 @@ h4 {
 
 	.card-popular img {
 		height: 200px;
-		width: 70%;
+		width: 80%;
 	}
 
 	.card-popular {
 		border: 4px solid white;
-		width: 360px;
-		margin-left: 16px;
-		margin-right: 20px;
+		width: 27%;
+		margin-bottom: 55px;
 	}
 
 	.card-description {
-		width: 240px;
+		width: 220px;
 	}
 
 	.stars-margin-top {
@@ -675,44 +676,43 @@ h4 {
 		flex-direction: column;
 		margin-top: 20px;
 		max-height: 80px;
-		width: 40%;
 		justify-content: center;
 	}
 
 	img.logo {
 		justify-content: center;
-		margin-left: 200px;
+		margin-left: 280px;
+		width: 150px;
+		height: 50px;
+	}
+
+	#container-nav a {
+		font-size: 32px;
+	}
+
+	#main-top h2 {
+		font-size: 51px;
 	}
 
 	#main-top p {
-		font-size: 20px;
+		font-size: 30px;
 		padding-top: 10px;
 		padding-bottom: 10px;
 	}
 
-	.fa-map-marker-alt {
-		font-size: 32px;
-
+	
+	.element5{
+		margin-bottom: 10px;
 	}
-
-	.fa-search {
-		visibility: visible;
-		color: white;
-		font-size: 32px;
-		display: flex;
-		margin-left: 34px;
-		padding-top: 10px;
-
-	}
-
-	.element5 {
-		font-size: 12px;
-	}
-
 	.info p {
-		font-size: 20px;
+		font-size:30px;
+		margin-left: 12px;
 	}
-
+	.fas.fa-info{
+		font-size:24px;
+		margin-bottom:24px;
+	}
+	
 	#container-nav {
 		display: flex;
 		width: 100%;
@@ -720,7 +720,7 @@ h4 {
 	}
 
 	#container-nav a {
-		font-size: 22px;
+		font-size:28px;
 	}
 
 	nav {
@@ -742,10 +742,51 @@ h4 {
 		color: black;
 	}
 
+	#icon6 {
+		width: 145px;
+		height: 70px;
+	}
+
 	#research-input {
-		font-size: 20px;
+		font-size: 30px;
 		font-weight: bold;
 		color: black;
+		width: 400px;
+		height: 47px;
+
+	}
+
+	#research .fa-map-marker-alt {
+		font-size: 36px;
+		padding-left: 18px;
+
+	}
+
+	.fa-search {
+		visibility: visible;
+		color: white;
+		font-size: 36px;
+		display: flex;
+		margin-left:40px;
+		padding-top:15px;
+	}
+	.research {
+		width: 600px;
+	}
+
+	#research-button-phone {
+		display: flex;
+		background-color: #0065fc;
+		color: #dee8ff;
+		font-weight: bold;
+		border-top-right-radius: 10px;
+		border-bottom-right-radius: 10px;
+		width:120px;
+		height:70px;
+	}
+
+	#button-research {
+		display: none;
 	}
 
 	.h2 {
@@ -760,65 +801,37 @@ h4 {
 		margin-top: 200px;
 	}
 
-	.research {
-		width: 600px;
-	}
-
-	#research-input {
-		width: 400px;
-	}
-
-	#icone6 {
-		width: 16%;
-	}
-
-	#research-button-phone {
-		display: flex;
-		background-color: #0065fc;
-		color: #dee8ff;
-		font-weight: bold;
-		border-top-right-radius: 8px;
-		border-bottom-right-radius: 8px;
-		width: 16%;
-	}
-
-	#button-research {
-		display: none;
-	}
-
 	#filtre {
 		width: 100%;
 		margin-left: 2%;
 		margin-bottom: 40px;
+		font-size:25px;
 	}
 
 	.search-filters {
 		display: flex;
 		width: 700px;
 		flex-wrap: wrap;
+		gap:40px;
 	}
-
-	.element-filtre p {
-		font-size: 24px;
-		width: 2px;
-	}
-
 
 	.list-element1,
 	.list-element2 {
 		display: flex;
-		width: 260px;
+		width: 285px;
 		flex-direction: row;
 		flex-wrap: nowrap;
 		height: 30px;
 		padding-top: 10px;
 		padding-bottom: 10px;
+		font-size:21px;
+		padding-left:15px;
 		
 	}
 
 	.list-item {
 		display: flex;
-		width: 760px;
+		width: 800px;
 		flex-direction: row;
 		flex-wrap: wrap;
 		margin-left: 0px;
@@ -830,14 +843,18 @@ h4 {
 		margin-bottom: 10px;
 		padding-left: 12px;
 		font-weight: bolder;
+		padding-right:24px;
 	}
+	
 
 	.list-item li {
 		display: flex;
 		justify-content: space-between;
 		margin-bottom: 25px;
 	}
-
+	.list-element a{
+		color: aqua;
+	}
 	.list-element2 a {
 		display: flex;
 		flex-wrap: nowrap;
@@ -845,8 +862,8 @@ h4 {
 
 	.list-element1 .fas,
 	.list-element2 .fas {
-		padding-left: 18px;
-		font-size: 22px;
+		padding-left:24px;
+		font-size: 26px;
 	}
 
 	/*hebergements*/
