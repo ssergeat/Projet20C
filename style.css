@@ -895,7 +895,7 @@ h4 {
 	
 	/*hebergements*/
 	.fa-chart-line{
-		padding-left:350px;
+		padding-left:320px;
 	}
 	.all-articles {
 		flex-direction: column-reverse;
@@ -911,6 +911,7 @@ h4 {
 
 	.all-articles h3 {
 		font-size: 22px;
+		margin-left:8px;
 	}
 
 	.all-articles .hebergements {
@@ -927,6 +928,8 @@ h4 {
 		gap: 10px;
 		justify-content: space-around;
 		background-color: white;
+		width:600px;
+		margin-left:33px;
 	}
 
 	.card-hebergement div {
