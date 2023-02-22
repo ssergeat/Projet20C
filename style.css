@@ -571,8 +571,8 @@ h4 {
 @media screen and (max-width: 992px) {
 	.all-articles {
 		flex-direction: column;
-		gap: 40px;
-		margin-left: 12px;
+		gap:10px;
+		
 	}
 
 	#container-nav a {
@@ -587,28 +587,40 @@ h4 {
 		margin-top: 26px;
 		margin-right: 25px;
 	}
+	
+	.hebergements{
+		margin-top: 4%;
+		margin-top:20px;
+		margin-bottom:60px;
+		height: 920px;
+	
+	}
+	
 
 	.popular-list,
 	.hebergements {
 		display: flex;
 		flex-direction: row;
 	}
-
+	
 	.card-popular img {
-		height: 200px;
-		width: 80%;
+		height:282px;
+		width:110px;
 	}
 
 	.card-popular {
 		border: 4px solid white;
-		width: 27%;
-		margin-bottom: 55px;
+		width:242px;
+		height: 285px;
+		margin:0px 15px 20px 20px;
 	}
 
 	.card-description {
 		width: 220px;
 	}
-
+	.fa-chart-line{
+		padding-left:620px;
+	}
 	.stars-margin-top {
 		display: flex;
 		font-size: 16px;
