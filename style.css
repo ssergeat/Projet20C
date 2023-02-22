@@ -873,9 +873,7 @@ h4 {
 		justify-content: space-between;
 		margin-bottom: 25px;
 	}
-	.list-element a{
-		color: aqua;
-	}
+	
 	.list-element2 a {
 		display: flex;
 		flex-wrap: nowrap;
@@ -896,6 +894,9 @@ h4 {
 	}
 	
 	/*hebergements*/
+	.fa-chart-line{
+		padding-left:350px;
+	}
 	.all-articles {
 		flex-direction: column-reverse;
 		gap: 60px;
@@ -922,38 +923,24 @@ h4 {
 
 	.card-hebergement {
 		display: flex;
-		width: 100%;
-		flex-wrap: wrap;
-		flex-direction: column;
+		flex-wrap:wrap;
 		gap: 10px;
 		justify-content: space-around;
-		min-height: 220px;
 		background-color: white;
 	}
 
 	.card-hebergement div {
-		flex-basis: calc(33% - 40px);
-		min-width: 220px;
-		min-height: 250px;
+		min-height:250px;
 		border: 5px solid var(--grey);
+		width:100%;
 	}
 
 	.card-hebergement img {
 		min-height: 170px;
 	}
 
-	.hebergements {
-		display: flex;
-		flex-direction: column;
-		gap: 0;
-		padding: 0 10px 0 10px;
-		background-color: white;
-		padding-top: 30px;
-	}
 
-	.card-img {
-		height: 200px;
-	}
+	
 
 	.populaires h3 {
 		background-color: lightgrey;
@@ -962,21 +949,26 @@ h4 {
 
 	.hebergements h3 {
 		font-size: 26px;
+		margin-bottom: 40px;
+		margin-top:80px;
 
 	}
 
 	.card-popular {
 		display: flex;
-		width: 640px;
+		width: 540px;
 		background-color: white;
 		padding: 5px;
 		padding-bottom: 15px;
-		min-height: 180px;
-		margin: 20px 20px 20px 20px;
-		min-width: 160px;
+		height: 200px;
+		margin: 20px 20px 20px 60px;
 		transition: all 0.2s;
 	}
-
+	.card-popular img{
+		height:200px;
+		width: 250px;
+	}
+	
 	.popular-list {
 		display: flex;
 		flex-direction: column;
