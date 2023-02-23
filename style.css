@@ -1,4 +1,3 @@
-
 body {
 	font-family: Raleways, sans-serif;
 	padding-left: 2.5%;
@@ -65,7 +64,7 @@ li:hover {
 
 .logo {
 	margin-top: 40px;
-	background: #f2f2f2;
+	background: white;
 	opacity: 1;
 	width: 65%;
 }
@@ -187,35 +186,58 @@ p {
 }
 
 /*logo icones des filtres de recherche header et icône de localisation*/
+.filters-section{
+    display: flex;
+    margin: 20px 0px 40px 6px;
+  }
+  
+  .filters-section h3{
+    margin: 15px 30px 0 30px;
+  }
+  
+  .filters-section .filters-icon{
+    display: flex;
+  }
+  
+  .filters-section .filters{
+    display: flex;
+    align-items: center;
+    height: 50px;
+    padding-right: 15px;
+    border: #dfdede 2px solid;
+    border-radius: 30px;
+    margin-right:20px;
+    cursor: pointer;
+    transition: 0.8s;
+  }
+  
+  .filters-section .filters:hover{
+    transform: scale(1.05);
+  }
+  
+  .filters-section .icon{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #0065fc;
+    margin-left:4px;
+	margin-right: 4px; 
+  }
+  
+  .filters-section p{
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    margin-right:4px;
+  }
+  
+  .filters-section p:hover{
+    color: #0065fc;
+  }
 
-.filtre {
-	font-weight: bolder;
-	font-size: 18px;
-	padding-right: 20px;
-	font-style:normal ;
-}
-
-
-.list-element1,
-.list-element2 {
-	font-size: 17px;
-	padding: 0 5px;
-}
-
-
-
-.list-element1,
-.list-element2 span,
-.list-element1,
-.list-element2 a {
-	display: inline-block;
-}
-
-.list-element1,
-.list-element2 span {
-	padding: 0 0px 0px 14px;
-	color: #0065fc;
-}
 
 /*icone info dans le header*/
 .element5 {
@@ -255,12 +277,12 @@ p {
 
 .fa-chart-line {
 	color: #0065fc;
-	
+
 }
 
 .all-articles {
 	display: flex;
-	gap:20px;
+	gap: 20px;
 }
 
 .all-articles>div {
@@ -274,14 +296,14 @@ p {
 }
 
 .all-articles .hebergements {
-	padding-left:25px;
+	padding-left: 25px;
 }
 
 .all-articles .populaires {
-	padding-left:12px;
-	padding-right:12px;
-	padding-bottom:4%;
-	
+	padding-left: 12px;
+	padding-right: 12px;
+	padding-bottom: 4%;
+
 }
 
 .star-blue {
@@ -298,12 +320,12 @@ p {
 	display: flex;
 	flex-wrap: wrap;
 	align-items: flex-start;
-	
+
 }
 
-.hebergements h3{
-	margin-top:40px;
-	margin-bottom:0px;
+.hebergements h3 {
+	margin-top: 40px;
+	margin-bottom: 0px;
 }
 
 .hebergements a {
@@ -314,13 +336,13 @@ p {
 .card-hebergement {
 	display: flex;
 	flex-wrap: wrap;
-	gap:4px;
+	gap: 4px;
 	justify-content: space-around;
 	margin-left: 4px;
 	margin-right: 4px;
-	height:600px;
-	width:800px;
-	
+	height: 600px;
+	width: 800px;
+
 }
 
 
@@ -333,13 +355,13 @@ p {
 	flex-grow: 1;
 	margin: 0 10px 10px 10px;
 	transition: all 0.2s;
-	width:180px;
+	width: 180px;
 
 }
 
 .card img {
 	border-radius: 16px 16px 0 0;
-	height:160px;
+	height: 160px;
 	width: 100%;
 	object-fit: cover;
 }
@@ -374,17 +396,18 @@ h4 {
 	flex-direction: column;
 	background-color: #F2F2F2;
 }
-.fa-chart-line{
-	padding-left:44px;
-	color:rgb(0, 101,252);
+
+.fa-chart-line {
+	padding-left: 44px;
+	color: rgb(0, 101, 252);
 }
 
 .populaires h3 {
 	display: flex;
 	padding-right: 20px;
-	padding-bottom:5%;
-	padding-top:5%;
-	
+	padding-bottom: 5%;
+	padding-top: 5%;
+
 }
 
 .popular-list {
@@ -397,12 +420,12 @@ h4 {
 	background-color: white;
 	padding: 5px;
 	border-radius: 15px;
-	min-height:160px;
+	min-height: 160px;
 	margin: 0px 30px 20px 25px;
-	width:260px;
+	width: 260px;
 	box-shadow: 0 0 8px var(--dark-grey);
 	transition: all 0.2s;
-	gap:12px;
+	gap: 12px;
 
 }
 
@@ -415,16 +438,16 @@ h4 {
 .card-popular img {
 	object-fit: cover;
 	border-radius: 16px 0 0 16px;
-	height:210px;
-	width:120px;
+	height: 210px;
+	width: 120px;
 }
 
 .card-description {
 	background-color: white;
 	display: flex;
 	flex-direction: column;
-	width:200px;
-	
+	width: 200px;
+
 }
 
 .card-description p,
@@ -572,64 +595,81 @@ h4 {
 @media screen and (max-width: 992px) {
 	.all-articles {
 		flex-direction: column;
-		gap:10px;
-		
+		gap: 10px;
+
 	}
 
 	#container-nav a {
 		font-size: 18px;
 	}
-
-	.list-item {
+	.fa-filters-icon{
+		color: aqua;
+	}
+	 .filters-icon{
+		margin-top: 10px;
+		margin-left:0px;
+		margin-right:0px;
+		padding-left:18px;
+		padding-right:0px;
+		
+	}
+	.filters-section h3{
+		margin: 25px 25px 0px 30px;
+		margin-left: 0px;
+	}
+	.filters-section p{
+		margin-left: 0%;
 		display: flex;
-	}
-
-	.filtre {
-		margin-top: 26px;
-		margin-right: 25px;
-	}
-	
-	.hebergements{
-		margin-top: 4%;
-		margin-top:20px;
-		margin-bottom:60px;
-		height: 920px;
-	
-	}
-	.hebergements h3{
-		margin-top:55px;
-	}
-	.card{
-		width: 210px;
-		margin-left:30px;
+		width:120%;
 		
 	}
 	
+	
+	.hebergements {
+		margin-top: 4%;
+		margin-top: 20px;
+		margin-bottom: 60px;
+		height: 920px;
+
+	}
+
+	.hebergements h3 {
+		margin-top: 55px;
+	}
+
+	.card {
+		width: 210px;
+		margin-left: 30px;
+
+	}
+
 
 	.popular-list,
 	.hebergements {
 		display: flex;
 		flex-direction: row;
 	}
-	
+
 	.card-popular img {
-		height:282px;
-		width:110px;
+		height: 282px;
+		width: 110px;
 	}
 
 	.card-popular {
 		border: 4px solid white;
-		width:242px;
+		width: 242px;
 		height: 285px;
-		margin:0px 15px 20px 20px;
+		margin: 0px 15px 20px 20px;
 	}
 
 	.card-description {
 		width: 220px;
 	}
-	.fa-chart-line{
-		padding-left:620px;
+
+	.fa-chart-line {
+		padding-left: 620px;
 	}
+
 	.stars-margin-top {
 		display: flex;
 		font-size: 16px;
@@ -727,19 +767,21 @@ h4 {
 		padding-bottom: 10px;
 	}
 
-	
-	.element5{
+
+	.element5 {
 		margin-bottom: 10px;
 	}
+
 	.info p {
-		font-size:30px;
+		font-size: 30px;
 		margin-left: 12px;
 	}
-	.fas.fa-info{
-		font-size:24px;
-		margin-bottom:24px;
+
+	.fas.fa-info {
+		font-size: 24px;
+		margin-bottom: 24px;
 	}
-	
+
 	#container-nav {
 		display: flex;
 		width: 100%;
@@ -747,7 +789,7 @@ h4 {
 	}
 
 	#container-nav a {
-		font-size:28px;
+		font-size: 28px;
 	}
 
 	nav {
@@ -772,8 +814,8 @@ h4 {
 	#icon6 {
 		width: 145px;
 		height: 70px;
-		border-top-left-radius:25px;
-		border-bottom-left-radius:25px;
+		border-top-left-radius: 25px;
+		border-bottom-left-radius: 25px;
 
 	}
 
@@ -788,7 +830,7 @@ h4 {
 
 	#research .fa-map-marker-alt {
 		font-size: 36px;
-		padding-left:36px;
+		padding-left: 36px;
 
 	}
 
@@ -797,9 +839,10 @@ h4 {
 		color: white;
 		font-size: 36px;
 		display: flex;
-		margin-left:40px;
-		padding-top:15px;
+		margin-left: 40px;
+		padding-top: 15px;
 	}
+
 	.research {
 		width: 600px;
 	}
@@ -809,10 +852,10 @@ h4 {
 		background-color: #0065fc;
 		color: #dee8ff;
 		font-weight: bold;
-		border-top-right-radius:25px;
-		border-bottom-right-radius:25px;
-		width:120px;
-		height:70px;
+		border-top-right-radius: 25px;
+		border-bottom-right-radius: 25px;
+		width: 120px;
+		height: 70px;
 	}
 
 	#button-research {
@@ -831,121 +874,92 @@ h4 {
 		margin-top: 200px;
 	}
 
-	.filtre {
-		width: 100%;
-		margin-left:3%;
-		margin-bottom: 40px;
-		margin-top: 60px;
-		font-size:25px;
+	
+	.element5 {
+		margin-top: 82px;
 	}
 
-	.search-filters {
-		display: flex;
-		width: 700px;
-		flex-wrap: wrap;
-		gap:40px;
-	}
+	.texte.info {
+		font-size: 30px;
+		padding-left: 20px;
 
-	.list-element1,
-	.list-element2 {
-		display: flex;
-		width: 285px;
-		flex-direction: row;
-		flex-wrap: nowrap;
-		height: 30px;
-		padding-top: 10px;
-		padding-bottom: 10px;
-		font-size:21px;
-		padding-left:15px;
-		
 	}
-
-	.list-item {
-		display: flex;
-		width: 800px;
-		flex-direction: row;
-		flex-wrap: wrap;
-		margin-left: 0px;
-	}
-
-	.list-item a {
-		justify-content: space-between;
-		margin-top: 10px;
-		margin-bottom: 10px;
+	/*filtres*/
+	.filters-section .filters{
+		width:250px;
+		height:66px;
 		padding-left: 12px;
-		font-weight: bolder;
-		padding-right:24px;
 	}
-	
+	.filters-section h3{
+		font-size: 22px;
+	}
+	.filters-section .filters-icon{
+		margin-left: 20px;
+		font-size: 22px;
+	  }
+	  .filters-section p{
+		font-size: 22px;
+	  }
+	  .filters-section{
+		flex-direction: column;
+	  }
+	  .filters-column{
+		flex-direction: row;
+		align-items: flex-start;
+	  }
+	  .filters-section .filters{
+		margin: 10px 20px 0 20px;
+		padding-right: 10px;
+	  }
 
-	.list-item li {
-		display: flex;
-		justify-content: space-between;
-		margin-bottom: 25px;
-	}
-	
-	.list-element2 a {
-		display: flex;
-		flex-wrap: nowrap;
-	}
-
-	.list-element1 .fas,
-	.list-element2 .fas {
-		padding-left:24px;
-		font-size: 26px;
-	}
-	.element5{
-		margin-top:82px;
-	}
-	.texte.info{
-		font-size:30px;
-		padding-left: 20px;		
-		
-	}
-	
 	/*hebergements*/
-	.fa-chart-line{
-		padding-left:350px;
+	.fa-chart-line {
+		padding-left: 350px;
 	}
+
 	.all-articles {
 		flex-direction: column-reverse;
-		gap: 60px;
-		background-color: lightgray;
+		gap:10px;
+		background-color: lightgrey;
+		margin-bottom: 0%;
 	}
 
 	.all-articles>div {
 		border-radius: 0%;
-		background-color: lightgrey;
+		margin-bottom: 0%;
+		background-color: lightgray;
 
 	}
 
 	.all-articles h3 {
 		font-size: 22px;
-		margin-left:8px;
+		margin-left: 8px;
 	}
 
 	.all-articles .hebergements {
 		background-color: white;
+		height: auto;
 	}
 
 	.hebergements div {
 		background-color: white;
+		height: auto;
 	}
 
 	.card-hebergement {
 		display: flex;
-		flex-wrap:wrap;
+		flex-wrap: wrap;
 		gap: 10px;
 		justify-content: space-around;
 		background-color: white;
-		width:620px;
-		margin-left:13px;
+		width: 620px;
+		margin-left: 13px;
 	}
 
 	.card-hebergement div {
-		min-height:200px;
+		min-height: 200px;
 		border: 5px solid var(--grey);
-		width:100%;
+		width: 100%;
 	}
 
 	.card-hebergement img {
@@ -953,7 +967,7 @@ h4 {
 	}
 
 
-	
+
 
 	.populaires h3 {
 		background-color: lightgrey;
@@ -963,7 +977,7 @@ h4 {
 	.hebergements h3 {
 		font-size: 26px;
 		margin-bottom: 40px;
-		margin-top:80px;
+		margin-top: 80px;
 
 	}
 
@@ -977,15 +991,17 @@ h4 {
 		margin: 20px 0px 0px 20px;
 		transition: all 0.2s;
 	}
-	.card-popular img{
-		height:200px;
+
+	.card-popular img {
+		height: 200px;
 		width: 250px;
 	}
-	
+
 	.popular-list {
 		display: flex;
 		flex-direction: column;
 		background-color: lightgray;
+		height: auto;
 	}
 
 	#acacher {
@@ -999,25 +1015,24 @@ h4 {
 		display: flex;
 		background-color: white;
 		flex-direction: column;
-		justify-content: space-between;
+
 	}
 
 	.activites-list {
 		display: inline;
-		justify-content: space-between;
 	}
 
 	.card-activites {
-		height:100%;
+		height: 100%;
 		margin-top: 40px;
 		display: inline-block;
 		flex-direction: row;
-		width:600px;
+		width: 600px;
 		border-radius: 30px 30px 30px 30px;
 		box-shadow: 4px 4px 4px var(--blue);
 		transition: all 0.2s;
 		border: 5px solid var(--grey);
-		margin-left:30px;
+		margin-left: 30px;
 	}
 
 	.card-activites img {
@@ -1037,7 +1052,7 @@ h4 {
 	#act {
 		font-size: 26px;
 		padding-left: 25px;
-		padding-top: 40px;
+		padding-top: 0px;
 	}
 
 	#lien-activites h4 {
