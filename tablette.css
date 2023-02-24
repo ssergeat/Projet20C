@@ -36,7 +36,9 @@
         height: 900px;
         width: auto;
     }
-
+    .card-hebergement{
+        margin-left: 40px;
+    }
     #acacher {
         padding-bottom: 70px;
     }
