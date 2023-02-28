@@ -1,10 +1,13 @@
 /**tablette max 992px**/
 @media screen and (max-width: 992px) {
-    .all-articles {
+    .all-articles{ 
         flex-direction: column;
         gap: 10px;
     }
-
+    #lien-articles{
+        flex-direction: column;
+        gap: 10px;
+    }
     #container-nav a {
         font-size: 18px;
     }
@@ -57,6 +60,7 @@
     .hebergements h3 {
         margin-top: 55px;
         margin-bottom: 75px;
+        width: 100%;
     }
 
     .card {
