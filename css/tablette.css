@@ -27,7 +27,18 @@
         display: flex;
         width: 120%;
     }
-
+    .element5 {
+		margin-bottom: 10px;
+	}
+    .info {
+		display: flex;
+		font-size: 30px;
+	}
+    .texte.info {
+		font-size: 18px;
+		padding-left: 10px;
+        padding-top: 15px;
+	}
     /*hebergements*/
     .hebergements {
         margin-top: 4%;

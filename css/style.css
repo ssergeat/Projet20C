@@ -241,12 +241,23 @@ p {
 .element5 {
 	color: #0065fc;
 	border-radius: 100px;
-	border: solid 1px lightgray;
+	border: solid 2px lightgray;
 	margin-right: 8px;
-	padding: 7px 11px 7px 15px;
+	padding: 8px 15px 8px 15px;
 	font-size: 15px;
 }
-
+.element5 {
+	margin-bottom: 10px;
+}
+.info {
+	display: flex;
+	font-size: 30px;
+}
+.texte.info {
+	font-size: 18px;
+	padding-left: 10px;
+	padding-top: 15px;
+}
 .info p {
 	display: initial;
 }
