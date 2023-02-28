@@ -34,14 +34,13 @@
 		margin-bottom: 10px;
 	}
 
-	.info p {
+	.info {
+		display: flex;
 		font-size: 30px;
-		margin-left: 12px;
 	}
 
 	.fas.fa-info {
 		font-size: 24px;
-		margin-bottom: 24px;
 	}
 
 	#container-nav {
@@ -134,9 +133,7 @@
 	}
 
 
-	.element5 {
-		margin-top: 82px;
-	}
+	
 
 	.texte.info {
 		font-size: 30px;
@@ -263,7 +260,7 @@
 	}
 
 	#acacher {
-		visibility: hidden;
+		display: none;
 	}
 
 	/*activites*/

@@ -2,6 +2,7 @@ body {
 	font-family: Raleways, sans-serif;
 	padding-left: 2.5%;
 	padding-right: 2.5%;
+	margin:auto;
 	margin-top: 6px;
 	box-sizing: border-box;
 	max-width: 1400px;
@@ -554,10 +555,9 @@ h4 {
 .footer li:hover {
 	background-color: #f2f2f2;
 }
-}
 
-/**destktop first max 1400px**/
-@media screen and (max-width:1400px) {
+
+
 	.ul search-filters {
 		display: flex;
 		flex-direction: row;
@@ -572,5 +572,4 @@ h4 {
 	.card-popular {
 		justify-content: space-between;
 	}
-}
 
