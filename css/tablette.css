@@ -1,7 +1,7 @@
 /**tablette max 992px**/
 @media screen and (max-width: 992px) {
     .all-articles{ 
-        flex-direction: column;
+        flex-direction:row;
         gap: 10px;
     }
     #lien-articles{

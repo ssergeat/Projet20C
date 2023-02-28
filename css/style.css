@@ -337,7 +337,7 @@ p {
 
 .hebergements {
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
 	width: 800px;
 	padding-right: 30px;
 	flex-wrap: wrap;

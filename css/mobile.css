@@ -184,9 +184,7 @@
 	.fa-chart-line {
 		padding-left: 350px;
 	}
-	#all-articles{
-		flex-direction: column-reverse;
-		background-color: lightgrey;
+	
 	}
 	.all-articles {
 		flex-direction: column-reverse;
