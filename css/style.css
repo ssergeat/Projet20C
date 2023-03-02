@@ -1,3 +1,4 @@
+@media screen and (max-width: 1400px) {
 body {
 	font-family: Raleways, sans-serif;
 	padding-left: 2.5%;
@@ -337,7 +338,7 @@ p {
 
 .hebergements {
 	display: flex;
-	flex-direction: row;
+	flex-direction:column;
 	width: 800px;
 	padding-right: 30px;
 	flex-wrap: wrap;
@@ -505,12 +506,10 @@ h4 {
 	background-color: white;
 	justify-content: space-between;
 	align-items: center;
-	width: 100%;
 }
 
 .card-activites {
 	margin-top: auto;
-	width: 22%;
 	border-radius: 20px;
 	box-shadow: 4px 4px 4px white;
 	transition: all 0.2s;
@@ -588,11 +587,9 @@ h4 {
 	flex-wrap: nowrap;
 }
 
-.all-articles {
-	display: flex;
-	flex-direction: column;
-}
+
 
 .card-popular {
 	justify-content: space-between;
+}
 }
