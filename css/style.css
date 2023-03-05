@@ -379,7 +379,7 @@ p {
 .popular-list {
     display: flex;
     flex-direction: column;
-	width: 429px;
+	width:429px;
 	height:611px;
 }
 
@@ -388,11 +388,7 @@ p {
     background-color: var(--white);
     padding: 5px;
     border-radius: 15px;
-    margin: 0 20px 20px 20px;
     box-shadow: 0 0 8px var(--dark-grey);
-    transition: all 0.2s;
-	height: auto;
-    width:auto;
 }
 .card-popular:hover {
     transform: scale(1.02);
