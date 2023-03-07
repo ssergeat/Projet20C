@@ -1,4 +1,6 @@
-
+@media screen and (max-width:1400px){
+	
+}
 body {
 	font-family: Raleways, sans-serif;
 	padding-left: 2.5%;
@@ -543,6 +545,8 @@ p {
 	flex-direction: row;
 	flex-wrap: nowrap;
 }
+
+
 
 
 
