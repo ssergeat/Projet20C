@@ -442,9 +442,16 @@ p {
 	padding-top: 45px;
 }
 
+.card-activites{
+	display:flex;
+	flex-direction:row;
+	background-color: aqua;
+	width:297px;
+}
+
 .container-act {
 	display: flex;
-	flex-direction: row;
+	flex-direction:row;
 	align-items: center;
 	justify-content: space-between;
 }
@@ -457,6 +464,8 @@ p {
 }
 
 .card-activites {
+	width: 297px;;
+	height: 380px;
 	margin-top: auto;
 	border-radius: 20px;
 	box-shadow: 4px 4px 4px white;
@@ -467,7 +476,7 @@ p {
 .card-activites-img,
 .card-activite-title {
 	display: flex;
-	width: 100%;
+	width: 297px;
 	border-radius: 20px;
 }
 
@@ -477,7 +486,7 @@ p {
 }
 
 .card-activites img {
-	width: 100%;
+	width: 297px;
 	object-fit: cover;
 	height: 445px;
 	border-top-right-radius: 20px;
@@ -485,7 +494,7 @@ p {
 }
 
 .card-activites:hover {
-	transform: scale(1.02);
+	display: flex;
 	box-shadow: 0px 0px 40px lightgrey;
 	cursor: pointer;
 }
