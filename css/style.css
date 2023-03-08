@@ -1,14 +1,15 @@
-@media screen and (max-width:1400px){
-	
-}
 body {
 	font-family: Raleways, sans-serif;
 	padding-left: 2.5%;
 	padding-right: 2.5%;
-	margin: auto;
-	margin-top: 6px;
+	
 	box-sizing: border-box;
 	max-width: 1400px;
+	margin:auto;
+}
+
+input::placeholder {
+	color: black;
 }
 
 a {
@@ -69,7 +70,7 @@ li:hover {
 	margin-top: 40px;
 	background: white;
 	opacity: 1;
-	width: 55%;
+	height:25px;
 }
 
 .logo img {
@@ -84,6 +85,7 @@ nav {
 
 .nav-element:hover {
 	border-top: #0065fc 3px solid;
+	color: #0065FC;
 }
 
 #container-nav {
@@ -130,10 +132,12 @@ h1 {
 
 #main-top h2 {
 	margin-top: 100px;
+	margin-bottom: 10px;
+	font-size: 22px;
 }
 
 #main-top p {
-
+	margin-top: 0px;
 	margin-bottom: 40px;
 }
 
@@ -145,7 +149,7 @@ p {
 #research-input {
 	border: none;
 	width: 200px;
-	font-size: 20px;
+	font-size: 18px;
 	font-weight: bold;
 	border: 2px solid #F2F2F2;
 	padding: 10px;
@@ -160,8 +164,8 @@ p {
 /*touche rechercher dans le header*/
 #button-research {
 	background-color: #0065fc;
-	color: #dee8ff;
-	font-size: 20px;
+	color: #FFFFFF;
+	font-size: 18px;
 	font-weight: bold;
 	border-top-right-radius: 16px;
 	border-bottom-right-radius: 16px;
@@ -189,11 +193,13 @@ p {
 /*logo icones des filtres de recherche header et icône de localisation*/
 .filters-section {
 	display: flex;
-	margin: 20px 0px 40px 6px;
+	margin: 20px 0px 40px 0px;
 }
 
+
+
 .filters-section h3 {
-	margin: 15px 30px 0 30px;
+	margin: 15px 30px 0px 0px;
 }
 
 .filters-section .filters-icon {
@@ -214,6 +220,7 @@ p {
 
 .filters-section .filters:hover {
 	transform: scale(1.05);
+	background-color: #DEEBFF;
 }
 
 .filters-section .icon {
@@ -246,20 +253,14 @@ p {
 	border-radius: 100px;
 	border: solid 1px lightgray;
 	margin-right: 8px;
-	padding: 8px 15px 8px 15px;
-	font-size: 15px;
-	margin-bottom: 10px;
+	padding: 7px 16px 7px 13px;
+	font-size: 12px;
+	width: 0px;
+	display: inline-block;
 }
 
-.info {
-	display: flex;
-	font-size: 30px;
-}
-
-.texte.info {
-	font-size: 18px;
-	padding-left: 10px;
-	padding-top: 15px;
+.info .texte{
+	display: inline-block;
 }
 
 .info p {
@@ -283,143 +284,41 @@ p {
 	margin-top: 15px;
 }
 
+/*titre hebergements à Marseille*/
+.h3 {
+	font-size: 22px;
+}
 
+.fa-chart-line {
+	color: #0065fc;
+
+}
+
+.all-articles {
+	display: flex;
+	gap: 20px;
+}
+
+.all-articles>div {
+	border-radius: 16px;
+	background-color: #F2F2F2;
+}
 
 .all-articles h3 {
-    padding-left: 20px;
-}
-.all-articles{
-	height: 611px;
+	padding-left: 20px;
+	font-size: 22px;
 }
 
-
-
-/* hebergements */
-.hebergements {
-    display: flex;
-	float:left;
-	width: 871px;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    padding: 0 10px 0 10px;
-}
-.hebergements h3 {
-    width: 100%;
-}
-.hebergements a {
-    text-decoration: none;
-    color: inherit;
+.all-articles .hebergements {
+	padding: 0 25px;
 }
 
+.all-articles .populaires {
+	padding-left: 12px;
+	padding-right: 12px;
+	padding-bottom: 4%;
 
-.card-hebergement {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    justify-content: space-around;
-	
- } 
- .all-articles .hebergements{
-	background-color: lightgrey;
-	height: 611px;
- }
-.card-hebergement div {
-    flex-basis: calc(23% - 0px);
-	width: 250px;
-	height: 207px;
 }
-
-.card {
-    background-color: var(--white);
-    border-radius: 16px;
-    padding: 5px;
-    box-shadow: 0 0 8px var(--dark-grey);
-    flex-grow: 1;
-    margin: 0 10px 10px 10px;
-    transition: all 0.2s;
-	
-	
-}
-
-
-.card img {
-    border-radius: 16px 16px 0 0;
-    height: 120px;
-    width: 100%;
-    object-fit: cover;
-}
-.card p, .card h4 {
-    margin: 5px
-}
-.card:hover {
-    transform: scale(1.02);
-    box-shadow: 0 0 8px var(--blue);
-    cursor: pointer;
-}
-.card .stars {
-    margin-top: auto;
-}
-
-
-
-
-
-/* populaires*/
-    
-.populaires {
-    display: flex;
-    flex-direction: column;
-    background-color: var(--light-grey);
-	
-}
-.populaires h3 {
-    display: flex;
-    justify-content: space-between;
-    padding-right: 20px;
-}
-
-.popular-list {
-    display: flex;
-    flex-direction: column;
-	width:429px;
-	height:611px;
-}
-
-.card-popular {
-    display: flex;
-    background-color: var(--white);
-    padding: 5px;
-    border-radius: 15px;
-    box-shadow: 0 0 8px var(--dark-grey);
-}
-.card-popular:hover {
-    transform: scale(1.02);
-    box-shadow: 0 0 8px var(--blue);
-    cursor: pointer;
-}
-.card-popular img {
-    object-fit: cover;
-    border-radius: 16px 0 0 16px;
-    height: auto;
-    width:auto;
-}
-
-.card-description {
-    background-color: var(--white);
-    display: flex;
-    flex-direction: column;
-    margin-left: 10px;
-}
-
-.card-description p,
-.card-description h4 {
-    margin: 3px;
-}
-
-.card-description .stars-margin-top {
-    margin-top: auto;
-}
-
 
 .star-blue {
 	color: #0065fc;
@@ -430,13 +329,155 @@ p {
 	opacity: 0.7;
 }
 
-#acacher {
-	font-size: 18px;
-	margin-top: 100px;
+.hebergements {
+	width: 65%;
 }
 
 
+.hebergements h3 {
+	margin-top: 40px;
+	margin-bottom: 30px;
+}
 
+.hebergements a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.card-hebergement {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+	justify-content: space-around;
+	margin-left: 4px;
+	margin-right: 4px;
+	width: 100%;
+}
+
+.card {
+	background-color: white;
+	border-radius: 16px 16px 16px 16px;
+	padding: 5px;
+	box-shadow: 0 0 8px gray;
+	flex-grow: 1;
+	margin: 0 10px 10px 10px;
+	transition: all 0.2s;
+	width: 28%;
+}
+
+.card img {
+	border-radius: 16px 16px 0 0;
+	height: 120px;
+	width: 100%;
+	object-fit: cover;
+}
+
+.card p,
+.card h4 {
+	margin: 5px
+}
+
+h4 {
+	font-size: 16px;
+}
+
+.card:hover {
+	transform: scale(1.02);
+	box-shadow: 0 0 8px blue;
+	cursor: pointer;
+}
+
+.card.stars {
+	margin-top: auto;
+	color: #0065fc;
+}
+
+#acacher {
+	font-size: 18px;
+}
+
+/*populaires*/
+.populaires {
+	display: flex;
+	flex-direction: column;
+	background-color: #F2F2F2;
+	width: 35%;
+}
+
+.populaires-titre{
+	display: flex;
+}
+
+.populaires-titre h3{
+	width:75%;
+	padding-right: 20px;
+	padding-bottom: 5%;
+	padding-top: 5%;
+}
+
+.populaires-titre i {
+	padding-top: 11%;
+	font-size: 22px;
+	text-align: right;
+	color: rgb(0, 101, 252);
+}
+
+.popular-list {
+	display: flex;
+	flex-direction: column;
+}
+
+.card-popular {
+	display: flex;
+	background-color: white;
+	padding: 5px;
+	border-radius: 15px;
+	height: 135px;
+	margin: 0px 30px 20px 25px;
+	box-shadow: 0 0 8px var(--dark-grey);
+	transition: all 0.2s;
+	gap: 12px;
+
+}
+
+.card-popular:hover {
+	transform: scale(1.02);
+	box-shadow: 0 0 8px var(--blue);
+	cursor: pointer;
+}
+
+.card-popular img {
+	object-fit: cover;
+	border-radius: 16px 0 0 16px;
+	height: 134px;
+	width: 120px;
+}
+
+.card-description {
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	width: 200px;
+
+}
+
+.card-description p,
+.card-description h4 {
+	margin: 3px;
+}
+
+.card-description .stars-margin-top {
+	margin-top: auto;
+}
+
+.h4 {
+	font-family: 'Raleway';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 22px;
+	line-height: 26px;
+	color: #000000;
+}
 
 /*activites*/
 #act {
@@ -444,16 +485,9 @@ p {
 	padding-top: 45px;
 }
 
-.card-activites{
-	display:flex;
-	flex-direction:row;
-	background-color: aqua;
-	width:297px;
-}
-
 .container-act {
 	display: flex;
-	flex-direction:row;
+	flex-direction: row;
 	align-items: center;
 	justify-content: space-between;
 }
@@ -463,12 +497,12 @@ p {
 	background-color: white;
 	justify-content: space-between;
 	align-items: center;
+	width: 100%;
 }
 
 .card-activites {
-	width: 297px;;
-	height: 380px;
 	margin-top: auto;
+	width: 22%;
 	border-radius: 20px;
 	box-shadow: 4px 4px 4px white;
 	transition: all 0.2s;
@@ -478,25 +512,26 @@ p {
 .card-activites-img,
 .card-activite-title {
 	display: flex;
-	width: 297px;
+	width: 100%;
 	border-radius: 20px;
 }
 
 .card-activites-title {
 	padding: 0 20px;
 	font-size: 14px;
+	height: 58px;
 }
 
 .card-activites img {
-	width: 297px;
+	width: 100%;
 	object-fit: cover;
 	height: 445px;
-	border-top-right-radius: 20px;
-	border-top-left-radius: 20px;
+	border-top-right-radius: 15px;
+	border-top-left-radius: 15px;
 }
 
 .card-activites:hover {
-	display: flex;
+	transform: scale(1.02);
 	box-shadow: 0px 0px 40px lightgrey;
 	cursor: pointer;
 }
@@ -513,9 +548,7 @@ p {
 	padding-left: 40px;
 }
 
-.footer1,
-.footer2,
-.footer3 {
+.footer-part {
 	width: 30%;
 	font-weight: normal;
 }
@@ -537,18 +570,6 @@ p {
 .footer li:hover {
 	background-color: #f2f2f2;
 }
-
-
-
-.ul search-filters {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-}
-
-
-
-
 
 
 

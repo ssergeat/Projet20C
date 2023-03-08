@@ -1,6 +1,10 @@
 /** mobile max 768 px**/
 @media screen and (max-width: 768px) {
-
+	body{
+		margin:0;
+		padding: 0;
+	}
+	
 	.logo {
 		display: flex;
 		flex-direction: column;
@@ -8,41 +12,25 @@
 		max-height: 80px;
 		justify-content: center;
 	}
+	
+	nav{
+		display: flex;
+		flex-direction: column;
+		margin-top: 30px;
+		height: auto;
+	}
+	
+	nav a{
+		text-align: center;
+		margin-bottom:40px;
+	}
 
 	img.logo {
-		justify-content: center;
-		margin-left: 280px;
-		width: 150px;
-		height: 50px;
+		width: 100px;
+		height: auto;
+		margin: auto;
 	}
-
-	#container-nav a {
-		font-size: 32px;
-	}
-
-	#main-top h2 {
-		font-size: 51px;
-	}
-
-	#main-top p {
-		font-size: 30px;
-		padding-top: 10px;
-		padding-bottom: 10px;
-	}
-
-	.element5 {
-		margin-bottom: 10px;
-	}
-
-	.info {
-		display: flex;
-		font-size: 30px;
-	}
-
-	.fas.fa-info {
-		font-size: 24px;
-	}
-
+	
 	#container-nav {
 		display: flex;
 		width: 100%;
@@ -50,21 +38,45 @@
 	}
 
 	#container-nav a {
-		font-size: 28px;
+		font-size: 22px;
 	}
-
-	nav {
-		display: flex;
-		flex-direction: column;
+	
+	#container-nav a: hover {
+		font-size: 22px;
 	}
-
+	
 	.nav-element {
-		border-bottom: var(--blue) 5px solid;
 		padding: 25px;
+		border-bottom: #F2F2F2 5px solid;
+	}
+	
+	.nav-element:hover {
+		border-bottom: #0065FC 5px solid;
+		border-top: none;
+	}
+	
+	#main-top, #research, .filters-section, .info, aside, .all-articles .populaires{
+		padding: 0 25px;
+	}
+	
+	#main-top {
+		margin-top: 0px;
 	}
 
-	.nav-element:hover {
-		border-top: none;
+	#main-top h2 {
+		font-size: 32px;
+		margin-top: 0px;
+	}
+
+	#main-top p {
+		font-size: 22px;
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+
+	.element5 {
+		margin-bottom: 10px;
+		height: 16px;
 	}
 
 	a.link-1,
@@ -77,20 +89,19 @@
 		height: 70px;
 		border-top-left-radius: 25px;
 		border-bottom-left-radius: 25px;
-		
 	}
 
 	#research-input {
-		font-size: 30px;
+		font-size: 20px;
 		font-weight: bold;
 		color: black;
-		width: 400px;
+		width: 100%;
 		height: 47px;
 	}
 
 	#research .fa-map-marker-alt {
 		font-size: 36px;
-		padding-left: 36px;
+		padding-left: 10px;
 	}
 
 	.fa-search {
@@ -98,7 +109,7 @@
 		color: white;
 		font-size: 36px;
 		display: flex;
-		margin-left: 40px;
+		padding-left: 18px;
 		padding-top: 15px;
 	}
 
@@ -128,26 +139,21 @@
 	.h4 {
 		font-size: 16px;
 	}
-
-	#main-top h2 {
-		margin-top: 200px;
-	}
-
-	.element5{
-		margin-top: 10px;
-	}
 	
+	.info{
+		display: flex;
+	}
 
-	.texte.info {
-		font-size: 30px;
-		padding-left: 20px;
+	.info .texte {
+		font-size: 20px;
 	}
 
 	/*filtres*/
 	.filters-section .filters {
 		width: 270px;
 		height: 66px;
-		padding-left:12px;
+		border-radius: 45px;
+		margin: 20px 10px 0 0px;
 	}
 
 	.filters-section h3 {
@@ -158,12 +164,9 @@
 		margin-left: 0px;
 		font-size: 22px;
 	}
-	.filters-icon{
-		padding-left: 12px;
-	}
 
 	.filters-section p {
-		font-size: 22px;
+		font-size: 16px;
 	}
 
 	.filters-section {
@@ -174,18 +177,17 @@
 		flex-direction: row;
 		align-items: flex-start;
 	}
-
-	.filters-section .filters {
-		margin: 10px 20px 0 0px;
-		padding-right: 10px;
-	}
-
-	/*hebergements*/
-	.fa-chart-line {
-		padding-left: 350px;
-	}
 	
+	.populaires-titre i{
+		padding-top: 40px;
+		padding-right: 0px;
 	}
+
+	.all-articles .populaires{
+		width: calc(100% - 50px);
+		margin: 0px;
+	}
+
 	.all-articles {
 		flex-direction: column-reverse;
 		background-color: lightgrey;
@@ -232,28 +234,39 @@
     .populaires h3 {
 		background-color: lightgrey;
 		font-size: 26px;
+		width: 75%;
 	}
 
 	.hebergements h3 {
 		font-size: 26px;
 		margin-bottom: 40px;
-		margin-top: 80px;
+
 	}
 	
 	.card-popular {
 		display: flex;
-		width: 630px;
+		width: calc(100% - 10px);
 		background-color: white;
-		padding: 5px;
-		padding-bottom: 15px;
-		height: 200px;
-		margin: 20px 0px 0px 20px;
+		height: 150px;
+		margin: 0 0 20px 0;
 		transition: all 0.2s;
 	}
 
 	.card-popular img {
-		height: 200px;
-		width: 250px;
+		height: 150px;
+		width: 190px;
+	}
+	
+	.card-description h4{
+		font-size: 16px;
+	}
+	
+	.card-description p{
+		font-size: 15px;
+	}
+	
+	.stars-margin-top .fas{
+		margin-right: 2px;
 	}
 
 	.popular-list {
@@ -261,11 +274,10 @@
 		flex-direction: column;
 		background-color: lightgray;
 		height: auto;
-		padding-bottom: 80px;
 	}
 
 	#acacher {
-		display: none;
+		visibility: hidden;
 	}
 
 	/*activites*/
@@ -296,10 +308,15 @@
 		border-top-right-radius: 5%;
 		object-fit: cover;
 	}
+	
+	.card-activites-title{
+		height:28px;
+		padding: 20px 20px 10px 20px;
+	}
 
 	.card-activites h4 {
+		margin: 0;
 		display: flex;
-		margin-top: 40px;
 		height: 22px;
 		width: 220px;
 		font-size: 16px;
@@ -308,22 +325,32 @@
 	#act {
 		font-size: 26px;
 		padding-left: 25px;
-		padding-top: 40px;
+		padding-top: 0px;
+	}
+	
+	aside{
+		margin-bottom: 100px;
 	}
 
-	#lien-activites h4 {
-		font-size: 22px;
+	aside h4 {
+		margin-bottom: 0;
 	}
 
 	/*footer*/
 	.footer {
 		display: flex;
 		flex-direction: column;
-		height: 800px;
+		height: auto;
 		border-style: none;
 		padding-top: 0px;
-		width: 700px;
+		width: 100%;
 		margin-top:5px ;
+		padding-bottom: 20px;
+	}
+	
+	.footer-part{
+		width: 100%;
+		margin: 0
 	}
 
 	li h4 {
